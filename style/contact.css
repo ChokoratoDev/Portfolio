@@ -1,0 +1,17 @@
+
+.contact {
+    background: var(--main-bg);
+    padding: 0 10px;
+}
+
+.contact h2 {
+    font-weight: 600;
+    flex-flow: column;
+}
+
+.contact button {
+    background-color: var(--ca);
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
