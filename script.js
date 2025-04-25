@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector(".burger");
-    const nav = document.querySelector("header nav");
+    const menu = document.querySelector(".menu");
 
 
     burger.addEventListener("click", () => {
-        burger.classList.toggle("open");
-        nav.classList.toggle("open");
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
     })
 })

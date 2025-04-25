@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="root">
         <!-- HEADER NAV --> 
         <header>
-            <!--  BURGER -->
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
+            <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contacts</a></li>    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#me">Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>    
                 </ul>
+            </div>
+
+            <!-- c le burjer -->
+            <nav>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
-            <h1></h1>
         </header>
 
         <!-- HERO -->
@@ -53,35 +56,49 @@
                 </div>
                 <div class="container_projects">
                     <div class="project">
-                        <h3>Project n°1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
-                        <div>
-                            <!--Icon number-->
-                            I
+                        <div class="card-project">
+                            <div class="front-card">
+                                <img src="/src/img/1_roman.svg" alt="Numberrrr TREEEE"> 
+                                <h3>Project n°1</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
+                            </div>
+                            <div class="back-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.  </p>
+                                <a href="#">Vers le code du projet</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project">
-                        <h3>Project n°2</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
-                        <div>
-                            <!--Icon number-->
-                            II
+                        <div class="card-project">
+                            <div class="front-card">
+                                <img src="/src/img/2_roman.svg" alt="Numberrrr TREEEE">
+                                <h3>Project n°2</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
+                            </div>
+                            <div class="back-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.  </p>
+                                <a href="#">Vers le code du projet</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project">
-                        <h3>Project n°3</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
-                        <div>
-                            <!--Icon number-->
-                            III
+                        <div class="card-project">
+                            <div class="front-card">
+                                <img src="/src/img/3_roman_white.svg" alt="Numberrrr TREEEE"> 
+                                <h3>Project n°3</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum optio, illum modi eos! Molestiae, commodi quam.</p>
+                            </div>
+                            <div class="back-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.  </p>
+                                <a href="#">Vers le code du projet</a>
+                            </div>
                         </div>
                     </div>
-                   
                 </div>
             </section>
 
             <!-- CONTACT --> 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div>
                 <h2>Vous désirez commencer un Projet ?</h2>
                 <button>Let's talk</button>
@@ -105,6 +122,7 @@
             </ul>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

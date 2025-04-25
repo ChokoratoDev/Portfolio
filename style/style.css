@@ -45,7 +45,8 @@ h1 {
     font-family: var(--title);
 }
 
-
-
+#hero{
+    padding-top: 80px;
+}
 
 
