@@ -3,6 +3,7 @@
 @import "./projects.css";
 @import "./me.css";
 @import "./home.css";
+@import "./nav.css";
 
 
 :root {
@@ -19,6 +20,8 @@
     --main-bg: #d9c5b2;
     /* dark */
 	--dark-bg: #b6977c; 
+    /* heuuu */
+    --brown: #241f21;
 
     --ca: #ffbe32;
 

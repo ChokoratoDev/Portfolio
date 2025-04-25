@@ -40,16 +40,26 @@
     border-radius: 10px;
     padding: 30px;
     position: relative;
+    overflow: hidden;
 }
+
 .project:hover:before{
     content: "";
     position: absolute ;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
     background-image: url("../src/img/bg_img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .8;
+    transform: rotateY(180deg);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+
+.project *{
+    position: relative;
+    z-index:1;
 }
