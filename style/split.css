@@ -1,0 +1,64 @@
+.split {
+    margin: auto;
+    width: 102%;
+    left: -5px;
+    overflow: hidden;
+    background-color: var(--brown);
+    padding: 0.5rem 0;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split p {
+    display: block; 
+    white-space: nowrap;
+
+    font-size: var(--text);
+    font-weight: bold;
+    color: var(--main-bg);
+    font-size: 1.2rem;
+    word-spacing: 3rem;
+    letter-spacing: 0.25rem;
+
+}
+
+.split:nth-child(even){
+    transform: rotate(0.7deg);
+}
+
+.split:nth-of-type(2){
+    transform: rotate(-0.7deg);
+}
+
+.split:nth-child(even) p{
+    animation: scrollRL 20s linear infinite;
+}
+.split:nth-of-type(2) p{
+    animation: scrollLR 20s linear infinite;
+}
+
+.symbols {
+    font-size: 1.2rem;
+}
+
+
+@keyframes scrollRL {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollLR {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
