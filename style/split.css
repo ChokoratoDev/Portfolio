@@ -1,18 +1,21 @@
 .split {
     margin: auto;
     width: 102%;
-    left: -5px;
     overflow: hidden;
     background-color: var(--brown);
     padding: 0.5rem 0;
+
     position: relative;
+    left: -5px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: var(--title);
 }
 
-.split p {
+.split div {
     display: block; 
     white-space: nowrap;
 
@@ -22,7 +25,6 @@
     font-size: 1.2rem;
     word-spacing: 3rem;
     letter-spacing: 0.25rem;
-
 }
 
 .split:nth-child(even){
@@ -33,10 +35,10 @@
     transform: rotate(-0.7deg);
 }
 
-.split:nth-child(even) p{
+.split:nth-child(even) div{
     animation: scrollRL 20s linear infinite;
 }
-.split:nth-of-type(2) p{
+.split:nth-of-type(2) div{
     animation: scrollLR 20s linear infinite;
 }
 

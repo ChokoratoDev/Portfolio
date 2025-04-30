@@ -12,8 +12,7 @@ header{
     background-color: var(--brown);
     height: 100vh;
     width: 100%;
-    max-width: 100%;
-
+    
     position: fixed; 
     top: 0;
     right: -6000px;
@@ -22,6 +21,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     text-align: center;
 
     font-size: 3rem;
@@ -34,10 +34,13 @@ header{
 .menu ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    max-width: 1024px;
 }
 
 /* Liens liste  */
@@ -116,14 +119,14 @@ header nav {
 
 @media screen and (min-width: 1024px) {
     .menu{
-        left:25px;
+        left: 0;
         height: 50px;
         max-width:100%
     }
 
     .menu ul{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
     }
 

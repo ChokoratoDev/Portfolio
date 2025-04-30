@@ -41,14 +41,20 @@
 body {
     font-family: var(--text);
     color: var(--cp);
+    width: 100%;
+    overflow-x: hidden;
 }
 
-h1 {
-    font-family: var(--title);
+#root{
+    width: 100%;
 }
 
 #hero{
     padding-top: 80px;
     background-color: var(--main-bg);
+    width: 100%;
 }
 
+h1, h2, h3, h4{
+    font-family: var(--title);
+}
