@@ -44,13 +44,12 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
 #root{
     width: 100%;
 }
 
 #hero{
-    padding-top: 80px;
+    padding-top: 30px;
     background-color: var(--main-bg);
     width: 100%;
 }
@@ -58,3 +57,4 @@ body {
 h1, h2, h3, h4{
     font-family: var(--title);
 }
+

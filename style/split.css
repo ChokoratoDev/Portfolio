@@ -7,6 +7,7 @@
 
     position: relative;
     left: -5px;
+    top: -15px;
 
     display: flex;
     justify-content: center;
@@ -14,9 +15,10 @@
 
     font-family: var(--title);
 }
-
-.split div {
-    display: block; 
+.split div{
+    display: inline-block; 
+}
+.split .split-elements {
     white-space: nowrap;
 
     font-size: var(--text);
@@ -35,17 +37,21 @@
     transform: rotate(-0.7deg);
 }
 
-.split:nth-child(even) div{
-    animation: scrollRL 20s linear infinite;
+.split:nth-child(even) .split-elements{
+    animation: scrollRL 30s linear infinite;
 }
-.split:nth-of-type(2) div{
-    animation: scrollLR 20s linear infinite;
+.split:nth-of-type(2) .split-elements{
+    animation: scrollLR 30s linear infinite;
 }
 
 .symbols {
     font-size: 1.2rem;
 }
-
+.barre{
+    width:50px;
+    border-bottom: 2px solid white ;
+    margin-bottom: 5px;
+}
 
 @keyframes scrollRL {
     from {
