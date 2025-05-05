@@ -32,17 +32,22 @@
 
 }
 
+html {
+    overflow-x: hidden;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-family: var(--text);
     color: var(--cp);
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #root{
     width: 100%;
@@ -52,9 +57,12 @@ body {
     padding-top: 30px;
     background-color: var(--main-bg);
     width: 100%;
+   
 }
 
 h1, h2, h3, h4{
     font-family: var(--title);
 }
-
+section{
+    scroll-behavior: smooth;
+}
