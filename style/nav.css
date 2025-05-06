@@ -4,8 +4,8 @@ header{
     background-color: var(--brown);
     position: fixed;
     width: 100%;
-    z-index: 1;
-    
+    z-index: 100;
+    border-bottom: 3px solid var(--ca);
 }
 
 /* Menu */
@@ -27,6 +27,8 @@ header{
 
     font-size: 3rem;
     transition: 3rem;
+    padding: 0 25px;
+    padding-bottom: 5px;
 
     z-index: 1001;
 }
@@ -62,7 +64,6 @@ header nav {
     display: flex;
     background-color: var(--brown);
 }
-
 
 /* bouton burger */
 .burger {

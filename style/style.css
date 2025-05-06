@@ -43,6 +43,10 @@ html {
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--text);
     color: var(--cp);
@@ -65,4 +69,27 @@ h1, h2, h3, h4{
 }
 section{
     scroll-behavior: smooth;
+}
+
+.arrow{
+    position: fixed;
+    bottom:15px;
+    right: 25px;
+    font-size: 3rem;
+    z-index: 10000;
+    color: #db7b0e;
+    cursor: pointer;
+}
+
+.spin{
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

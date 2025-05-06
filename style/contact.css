@@ -8,6 +8,11 @@
 	box-sizing: border-box;
 }
 
+#contact {
+	position: relative;
+	top: -50px;
+}
+
 .contact {
 	background: var(--main-bg);
 	padding: 20px 40px;
@@ -16,7 +21,7 @@
 	gap: 25px;
 	max-width: 1024px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 5rem;
 }
 
 .contact > div:nth-child(1) {

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,10 +17,10 @@
         <header>
             <div class="menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#me">Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#navHome" class="link tab">Home</a></li>
+                    <li><a href="#navMe" class="link tab">Me</a></li>
+                    <li><a href="#navProject" class="link tab">Projects</a></li>
+                    <li><a href="#contact" class="link tab">Contact</a></li>
                 </ul>
             </div>
 
@@ -33,13 +33,28 @@
                 </div>
             </nav>
         </header>
-
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
         <!-- HERO -->
         <div id="hero">
             <!-- HOME -->
             <div class="degrade">
                 <section id="home">
-                    <h1>J'essaye de faire des sites et applications <em>WEB</em>...</h1>
+                    <div id="navHome"></div>
+                    <!-- TITLE -->
+                    <h1>
+                        Développeur fullstack, créateur de sites et<em>Applications Web</em>
+                    </h1>
+
+                    <!-- BOUTON DL CV -->
+                    <button class="cv" id="downloadButton">
+                        Mon CV
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <!-- LOGOS TECHS -->
                     <div class="logo">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
@@ -48,9 +63,12 @@
                         <i class="fa-brands fa-react"></i>
                         <i class="fa-solid fa-database"></i>
                     </div>
+                    <img id="img-home" src="src/img/code.jpg" alt="">
+
                 </section>
             </div>
 
+            <!-- Bandeau -->
             <div class="split">
                 <div class="split-element">
                     HTML <span class="symbols">♦</span>
@@ -86,15 +104,22 @@
 
             <!-- ABOUT -->
             <section id="me">
+                <div id="navMe"></div>
                 <h2>Hello Stranger</h2>
-                <p>Après quelques années à errer à la suite d'un BTS tumultueux, j'ai décidé de reprendre une formation
-                    en tant que développeur Web. Vivre en Corse, c'est bon pour la santé, mais niveau communication, ce
-                    n'est pas tout à fait ça. Passer du temps sur internet est le meilleur moyen de faire des rencontres
-                    et d'explorer le monde quand on est 'coincé' sur une île. Cette interface avec le monde, le web,
-                    c'est mon domaine, et j'ai bien l'intention d'ajouter ma pierre à l'édifice.</p>
-                <img src="" alt="photo JP">
+                <p>
+                    Après quelques années à errer à la suite d'un BTS tumultueux, j'ai
+                    décidé de reprendre une formation en tant que développeur Web. Vivre
+                    en Corse, c'est bon pour la santé, mais niveau communication, ce
+                    n'est pas tout à fait ça. Passer du temps sur internet est le
+                    meilleur moyen de faire des rencontres et d'explorer le monde quand
+                    on est 'coincé' sur une île. Cette interface avec le monde, le web,
+                    c'est mon domaine, et j'ai bien l'intention d'ajouter ma pierre à
+                    l'édifice.
+                </p>
+                <img id="img-me" src="src/img/laptop.jpg" alt="photo JP" />
             </section>
 
+            <!-- Bandeau -->
             <div class="split">
                 <div class="split-element">
                     HTML <span class="symbols">♦</span>
@@ -129,58 +154,86 @@
             </div>
 
             <!-- PROJECTS -->
-            <section id="projects">
-                <div class="title_projects">
-                    <p></p>
-                    <h2>My projects</h2>
-                    <p></p>
-                </div>
-                <div class="container_projects">
-                    <div class="project">
-                        <div class="card-project">
-                            <div class="front-card">
-                                <img src="/src/img/1_roman_white.svg" alt="Nombre romain 1">
-                                <h3>Project n°1</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum
-                                    optio, illum modi eos! Molestiae, commodi quam.</p>
+            <div class="degrade-project">
+                <section id="projects">
+                    <div id="navProject"></div>
+                    <div class="title_projects">
+                        <p></p>
+                        <h2>My projects</h2>
+                        <p></p>
+                    </div>
+                    <div class="container_projects">
+                        <div class="project">
+                            <div class="card-project">
+                                <div class="front-card">
+                                    <div class="bg-number">
+                                        <img src="/src/img/1_roman.svg" alt="Nombre romain 1" />
+                                    </div>
+                                    <h3>Project n°1</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Enim iste rem pariatur eum optio, illum modi eos!
+                                        Molestiae, commodi quam.
+                                    </p>
+                                </div>
+                                <div class="back-card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eveniet, vero.
+                                    </p>
+                                    <a href="#">Vers le code du projet</a>
+                                </div>
                             </div>
-                            <div class="back-card">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero. </p>
-                                <a href="#">Vers le code du projet</a>
+                        </div>
+                        <div class="project">
+                            <div class="card-project">
+                                <div class="front-card">
+                                    <div class="bg-number">
+                                        <img src="/src/img/2_roman_white.svg" alt="Nombre romain 2" />
+                                    </div>
+                                    <h3>Project n°2</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Enim iste rem pariatur eum optio, illum modi eos!
+                                        Molestiae, commodi quam.
+                                    </p>
+                                </div>
+                                <div class="back-card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eveniet, vero.
+                                    </p>
+                                    <a href="#">Vers le code du projet</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="card-project">
+                                <div class="front-card">
+                                    <div class="bg-number">
+                                        <img src="/src/img/3_roman_white.svg" alt="Nombre romain 3" />
+                                    </div>
+                                    <h3>Project n°3</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Enim iste rem pariatur eum optio, illum modi eos!
+                                        Molestiae, commodi quam.
+                                    </p>
+                                </div>
+                                <div class="back-card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eveniet, vero.
+                                    </p>
+                                    <a href="#">Vers le code du projet</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project">
-                        <div class="card-project">
-                            <div class="front-card">
-                                <img src="/src/img/2_roman_white.svg" alt="Nombre romain 2">
-                                <h3>Project n°2</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum
-                                    optio, illum modi eos! Molestiae, commodi quam.</p>
-                            </div>
-                            <div class="back-card">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero. </p>
-                                <a href="#">Vers le code du projet</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="card-project">
-                            <div class="front-card">
-                                <img src="/src/img/3_roman_white.svg" alt="Nombre romain 3">
-                                <h3>Project n°3</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste rem pariatur eum
-                                    optio, illum modi eos! Molestiae, commodi quam.</p>
-                            </div>
-                            <div class="back-card">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero. </p>
-                                <a href="#">Vers le code du projet</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
+            <!-- Bandeau -->
             <div class="split">
                 <div class="split-element">
                     HTML <span class="symbols">♦</span>
@@ -215,7 +268,7 @@
             </div>
 
             <!-- CONTACT -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div>
                     <h2>
                         Vous désirez <span>commencer</span> <br />
@@ -226,16 +279,13 @@
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
                     <form action="">
-                        <div>
-                            <label for="">Nom</label><input type="text" />
-                        </div>
-                        <div>
-                            <label for="">E-mail</label><input type="text" />
-                        </div>
+                        <div><label for="">Nom</label><input type="text" /></div>
+                        <div><label for="">E-mail</label><input type="text" /></div>
                         <div>
                             <label for="">Message</label>
                             <textarea name="message" id="message" rows="10" cols="10">
-Truc</textarea>
+                                Truc
+                            </textarea>
                         </div>
                         <button type="submit">Envoyer</button>
                     </form>
@@ -262,9 +312,7 @@ Truc</textarea>
         </div>
 
         <!-- FOOTER -->
-        <footer>
-
-        </footer>
+        <footer></footer>
     </div>
     <script src="script.js"></script>
 </body>

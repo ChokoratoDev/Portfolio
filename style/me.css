@@ -4,7 +4,19 @@
 
 #me{
     max-width: 1024px;
-    margin: 20px 20px 50px 20px;
+    margin: 50px 20px 50px 20px;
+    position: relative;
+    text-align: center;
+}
+
+#navMe {
+	position: relative;
+	top: -200px;
+}
+
+h2{
+    margin-top: 50px;
+    text-align: left;
 }
 
 #me p {
@@ -13,13 +25,13 @@
 
 @media  screen and (min-width: 620px){
     #me {
-        margin: 30px 20px 50px 20px ;
+        margin: 120px 20px 50px 20px ;
     }
 }
 
 @media  screen and (min-width: 1024px) {
     #me {
-        margin: 30px auto 50px auto ;
+        margin: 120px auto 50px auto ;
         padding: 20px 40px;
     }
     
@@ -27,3 +39,16 @@
         font-size: 5rem;
     }
 } 
+
+#img-me{
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:620px){
+    #img-me{
+        width: 70%;
+    }
+}

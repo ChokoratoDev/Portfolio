@@ -3,19 +3,23 @@
 ************************************************************************************/
 
 #projects{
-
     display: flex;
     flex-direction: column;
-    background-color: var(--main-bg);
+    background-color: var(--brown);
+    color: var(--main-bg);
     max-width: 1024px;
-    padding: 20px 40px;
+    padding: 20px 40px 40px 50px;
+    position: relative;
 	margin: auto;
-	margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+#navProject {
+	position: relative;
+	top: -200px;
 }
 
 .title_projects{
-    
+    z-index: 2;
     margin-bottom: 15px;
     padding: 0 20px;
 }
@@ -25,6 +29,8 @@
     gap: 20px;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
+    margin-bottom: 25px;
 }
 
 
@@ -35,6 +41,38 @@
     font-size: 1.6em;
     width: 100%;
     text-align: right;
+}
+
+.degrade-project {
+    background: var(--brown);
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.degrade-project::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    height: 80px;
+    rotate: -2deg;
+    width: 101%;
+    z-index: 1;
+    background-color: var(--brown);
+}
+
+.degrade-project::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 80px;
+    rotate: -2deg;
+    width: 101%;
+    z-index: 1;
+    background-color: var(--brown);
+}
+
+#projects h2 {
+    color: var(--ca);
 }
 
 .project p{
@@ -70,8 +108,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--cb);
-    border-radius: 20px;
+    border: 2px solid var(--cb);
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -80,7 +118,7 @@
 }
 
 .back-card{
-    background:radial-gradient( rgba(255,255,255, 0.2), rgba(0,0,0, 0.6) ), url('../src/img/bg_img.jpg') ;
+    background:radial-gradient( rgba(255,255,255, 0.4), rgba(0,0,0, 0.6) ), url('../src/img/laptop.jpg') ;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,17 +127,29 @@
     flex-direction: column;
     color: white;
 }
+.back-card a{
+    text-decoration: none;
+    color: #db7b0e;
+    
 
+}
 .front-card img{
-    background: linear-gradient(to bottom, var(--brown), var(--main-bg)) ;
+    width: 100%;
+    height:100%;
+    filter: invert(9%) sepia(8%) saturate(888%) hue-rotate(284deg) brightness(92%) contrast(89%);
+}
+
+.bg-number{
+    background-color: var(--main-bg);
     border-radius: 5px;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
-    left: -15px;
+    left: -22px;
     top: 45px;
 }
+
 
 @media  screen and (min-width: 620px){
     .project p{

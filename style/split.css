@@ -5,43 +5,51 @@
     background-color: var(--brown);
     position: relative;
     left: -5px;
-    top: -15px;
+    top: -20px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .split-element {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    width:300px;
     flex-wrap: nowrap;
     position: absolute;
-    white-space: nowrap;
     font-size: var(--text);
     font-weight: bold;
     color: var(--main-bg);
-    font-size: 1.2rem;
-    word-spacing: 3rem;
+    font-size: 1.4rem;
     letter-spacing: 0.25rem;
-
+    text-transform: uppercase;
 }
 
+.symbol{
+    font-size: 1.2rem;
+}
+.split:nth-of-type(2){
+    top:-35px;
+}
 .split:nth-of-type(even) .split-element {
-    left: 100%;
-    animation: scrollToRl 30s linear infinite;
+    left: calc(300px*6);
+    animation: scrollToRl 20s linear infinite;
 }
 
 .split:nth-of-type(odd) .split-element {
-    animation: scrollToLr 30s linear infinite;
-    right: 100%;
+    animation: scrollToLr 20s linear infinite;
+    right: max(calc(300px*6),100%);
 }
 
-/* .split-element{
-    
-    position: absolute;
-} */
 div.split:nth-of-type(even) {
-    transform: rotate(0.7deg);
+    transform: rotate(2deg);
 }
 
 div.split:nth-of-type(odd) {
-    transform: rotate(-0.7deg);
+    transform: rotate(-2deg);
 }
 
 @keyframes scrollToRl {
@@ -57,59 +65,76 @@ div.split:nth-of-type(odd) {
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(1) {
-    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+    animation-delay: calc(20s / 6 * (6 - 1) * -1);
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(2) {
-    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+    animation-delay: calc(20s / 6 * (6 - 2) * -1);
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(3) {
-    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+    animation-delay: calc(20s / 6 * (6 - 3) * -1);
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(4) {
-    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+    animation-delay: calc(20s / 6 * (6 - 4) * -1);
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(5) {
-    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+    animation-delay: calc(20s / 6 * (6 - 5) * -1);
 }
 
 .split:nth-of-type(even) .split-element:nth-of-type(6) {
-    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+    animation-delay: calc(20s / 6 * (6 - 6) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(1) {
-    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+    animation-delay: calc(20s / 6 * (6 - 1) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(2) {
-    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+    animation-delay: calc(20s / 6 * (6 - 2) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(3) {
-    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+    animation-delay: calc(20s / 6 * (6 - 3) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(4) {
-    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+    animation-delay: calc(20s / 6 * (6 - 4) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(5) {
-    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+    animation-delay: calc(20s / 6 * (6 - 5) * -1);
 }
 
 .split:nth-of-type(odd) .split-element:nth-of-type(6) {
-    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+    animation-delay: calc(20s / 6 * (6 - 6) * -1);
 }
 
-.symbols {
-    font-size: 1.2rem;
-}
 
 .barre {
     width: 50px;
-    border-bottom: 2px solid var(--main-bg);
-    margin-bottom: 5px;
+    border-bottom: 3px solid var(--main-bg);
+
+}
+
+@media  screen and (min-width:620px) {
+    .split-element {
+        font-size: 1.6rem;
+    }
+
+    .symbol{
+        font-size: 1.6rem;
+    }
+}
+
+@media  screen and (min-width:1024px) {
+    .split-element {
+        font-size: 1.8rem;
+    }
+
+    .symbol{
+        font-size: 1.8rem;
+    }
 }
