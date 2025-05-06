@@ -35,8 +35,6 @@
 
 
 .project h3{
-    position: relative;
-    margin-bottom: 25px;
     margin-right: 40px;
     font-size: 1.6em;
     width: 100%;
@@ -104,6 +102,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 20px;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -118,25 +117,64 @@
 }
 
 .back-card{
-    background:radial-gradient( rgba(255,255,255, 0.4), rgba(0,0,0, 0.6) ), url('../src/img/laptop.jpg') ;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     transform: rotateX(180deg);
     flex-direction: column;
     color: white;
 }
-.back-card a{
-    text-decoration: none;
-    color: #db7b0e;
-    
 
+.back-card-1{
+    background:radial-gradient( rgba(255,255,255, 0.1), rgba(0,0,0, 0.6) ), url('../src/img/laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.back-card-2{
+    background:radial-gradient( rgba(255,255,255, 0.1), rgba(0,0,0, 0.6));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.back-card-3{
+    background:radial-gradient( rgba(255,255,255, 0.1), rgba(0,0,0, 0.6));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.back-card button{
+    position: relative;
+    text-decoration: none;
+    color: var(--brown);
+    border: 1px solid red;
+    background-color: rgba(219, 123, 14, 0.8);
+    padding:10px;
+    border-radius:15px;
+    margin-top:15px;
+    cursor: pointer;
+}
+.back-card button a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.back-card button:hover{
+    transition: all 0.2s;
+    box-shadow: inset 2px 2px 5px black,
+                inset -2px -2px 5px black;
+}
+.back-card button:hover span{
+    font-size: 0.8rem;
 }
 .front-card img{
     width: 100%;
     height:100%;
-    filter: invert(9%) sepia(8%) saturate(888%) hue-rotate(284deg) brightness(92%) contrast(89%);
+    filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(284deg) brightness(0%) contrast(89%);
 }
 
 .bg-number{
@@ -160,6 +198,10 @@
         font-size: 1.8rem;
     }
 
+    #projects h2 {
+        font-size: 2.5rem;
+    }
+
 }
 
 
@@ -179,7 +221,7 @@
 
     .project{
         width: 80%;
-        height:200px
+        height:300px
     }
 
 } 

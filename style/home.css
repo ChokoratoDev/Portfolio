@@ -85,10 +85,10 @@
 }
 
 #img-home{
-    margin-top: -150px;
+    margin-top: -110px;
     position: relative;
     width: 90%;
-
+    top:140px;
     left: 50%;
     transform: translateX(-50%);
     z-index:10;

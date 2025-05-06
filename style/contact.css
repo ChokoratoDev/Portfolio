@@ -89,6 +89,15 @@
 	color: var(--main-bg);
 }
 
+.links li a {
+	color: var(--brown);
+	text-decoration: none;
+}
+
+.links li a:hover {
+	color: var(--main-bg);
+}
+
 .contact hr {
 	height: 1px;
 	background: rgba(0, 0, 0, 0.2);

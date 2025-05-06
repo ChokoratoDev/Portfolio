@@ -72,13 +72,7 @@ section{
 }
 
 .arrow{
-    position: fixed;
-    bottom:15px;
-    right: 25px;
-    font-size: 3rem;
-    z-index: 10000;
-    color: #db7b0e;
-    cursor: pointer;
+  display: none;
 }
 
 .spin{
@@ -91,5 +85,18 @@ section{
     }
     to{
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .arrow{
+        display: block;
+        position: fixed;
+        bottom:15px;
+        right: 25px;
+        font-size: 3rem;
+        z-index: 10000;
+        color: #db7b0e;
+        cursor: pointer;
     }
 }

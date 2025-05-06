@@ -15,17 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 	formDisplay();
 	navBar();
-	
-	window.addEventListener('resize', () =>{
-		if(window.matchMedia('(min-width: 1024px)').matches){
-            arrow.style.display = 'block';
-            arrowGestion();
-        }else{
-            arrow.style.display = 'none'
-            window.onscroll = null; 
-        }
-	})
-	
+
+	if(window.innerWidth >= 1024){
+		arrowGestion();
+	}
 	const gear = document.querySelector('.fa-gear')
 	
 	// Gestion dl/ouverture du cv
@@ -51,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		lien.click();
 	});
 
+	// Fix navigation
 	navLinks.forEach(link => {
 		link.addEventListener('click', () => {
 			const targetId = link.getAttribute('href').substring(1)
@@ -71,7 +65,6 @@ function arrowGestion(){
                     top:0,
                     behavior: "smooth"
                 })
-				
             })
         }else{
             arrow.style.display = 'none'
@@ -118,20 +111,17 @@ function formDisplay(){
 	});
 }
 
-
-
-
-
+// Fix navigation
 function navTo(element){
-	const rect = element.getBoundingClientRect();
-	const elementCenter = rect.top + rect.height / 2;
-	const windowCenter = window.innerHeight / 2;
-	const scrollingTo = window.scrollY + elementCenter - windowCenter;
+	const elementTop = element.offsetTop;
+    const elementHeight = element.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    const scrollingTo = elementTop - (windowHeight / 2) + (elementHeight / 2);
 
 	window.scrollTo({
 		top : scrollingTo,
 		behavior: 'smooth'
 	});
-
 }
 

@@ -14,13 +14,17 @@
 	top: -200px;
 }
 
-h2{
+#me h2{
     margin-top: 50px;
     text-align: left;
 }
 
 #me p {
     text-align: justify;
+}
+
+#me img {
+    border-radius: 50%;
 }
 
 @media  screen and (min-width: 620px){
