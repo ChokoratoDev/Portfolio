@@ -16,6 +16,7 @@
 
 #me h2{
     margin-top: 50px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -25,11 +26,19 @@
 
 #me img {
     border-radius: 50%;
+    width: 300px;
+    transition: border-radius 1s ease-in-out;
+    transition: width 1.5s ease-in-out;
 }
 
 @media  screen and (min-width: 620px){
     #me {
         margin: 120px 20px 50px 20px ;
+    }
+
+    #me img {
+        border-radius: 10px;
+        width: 70%
     }
 }
 

@@ -124,7 +124,7 @@
 }
 
 .back-card-1{
-    background:radial-gradient( rgba(255,255,255, 0.1), rgba(0,0,0, 0.6) ), url('../src/img/laptop.jpg');
+    background:radial-gradient( rgba(255,255,255, 0.1), rgba(0,0,0, 0.6) ), url('../src/img/project1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,8 +148,8 @@
     position: relative;
     text-decoration: none;
     color: var(--brown);
-    border: 1px solid red;
-    background-color: rgba(219, 123, 14, 0.8);
+    border: 1px solid rgba(219, 123, 14, 0.8);
+    background-color: var(--ca);
     padding:10px;
     border-radius:15px;
     margin-top:15px;
@@ -165,8 +165,8 @@
 
 .back-card button:hover{
     transition: all 0.2s;
-    box-shadow: inset 2px 2px 5px black,
-                inset -2px -2px 5px black;
+    box-shadow: inset 2px 2px 5px rgba(219, 123, 14, 0.8),
+                inset -2px -2px 5px rgba(219, 123, 14, 0.8);
 }
 .back-card button:hover span{
     font-size: 0.8rem;
