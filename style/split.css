@@ -34,12 +34,18 @@
 .split:nth-of-type(2){
     top:-35px;
 }
-.split:nth-of-type(even) .split-element {
-    left: calc(300px*6);
+
+.split:nth-of-type(2) .split-element {
+    left: max(calc(300px*6),100%);
     animation: scrollToRl 20s linear infinite;
 }
 
-.split:nth-of-type(odd) .split-element {
+.split:nth-of-type(3) .split-element {
+    animation: scrollToLr 20s linear infinite;
+    right: max(calc(300px*6),100%);
+}
+
+.split:nth-of-type(5) .split-element {
     animation: scrollToLr 20s linear infinite;
     right: max(calc(300px*6),100%);
 }
